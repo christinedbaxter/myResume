@@ -1,0 +1,219 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: transparent url("../imgs/dataAnalyticsBackGround.png") center / cover fixed;
+    z-index: 9999;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+header .myName {
+    margin: 0;
+    padding: 5px;
+    font-size: .75rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset;
+    border-radius: 15px;
+}
+
+header .myName h2 {
+    width: 165px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header .myName h2 a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header .myName h2 a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--color-block-text) solid 3px;
+    border-radius: 15px;
+    transform: scale3d(1.1, 1, 0.5);
+}
+
+header .topnav {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 20px 0 5px;
+}
+
+header .topnav div,
+header .topnav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5px;
+    margin: 5px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .topnav a {
+    font-weight: lighter;
+    height: auto;
+    width: 125px;
+    box-shadow: inset;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    border: #191970 solid 3px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 6px 8px;
+    text-decoration: none;
+}
+
+header .topnav #myDownload {
+    width: 165px;
+}
+
+header .topnav a[data-hs-anchor="true"] {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -150px;
+}
+
+header .topnav a:hover,
+header .topnav a.activeNav {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--color-block-text) solid 3px;
+    transform: scale3d(1.1, 1, 0.5);
+}
+
+header .topnav a.activeNav {
+    text-decoration: none;
+    background-color: var(--color-block-text);
+    color: var(--tertiary-color);
+    align-content: center;
+}
+
+header .contact-position {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--tertiary-color);
+    margin-top: 6px;
+}
+
+header .contact-position .icon {
+    display: none;
+}
+
+header .contact-position div {
+    margin: 5px;
+    padding: 0px 6px;
+}
+
+header .contact-position a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header .contact-position a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--color-block-text) solid 3px;
+    border-radius: 4px;
+    transform: scale3d(1.1, 1, 0.5);
+}
+
+header nav {
+    display: flex;
+    align-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    padding: 0 2px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    width: 105px;
+    white-space: normal;
+    min-height: 35px;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+header nav ul li a[data-hs-anchor="true"] {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -150px;
+}
+
+header nav ul li a[data-hs-anchor="true"]:target {
+    visibility: visible;
+    top: 0;
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: var(--color-block-text) solid 3px;
+    border-radius: 15px;
+    transform: scale3d(1.1, 1, 0.5);
+}
+
+/* Hero Style Start */
+.hero {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    background-image: url("../images/dataAnalyticsBackGround.jpeg");
+    background-size: cover;
+    background-position: center 80%;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-color: var(--color-block-text);
+}
+
+.hero-subtitle {
+    width: 100%;
+    text-align: center;
+    margin: 0.25%;
+    line-height: 2;
+}
+
+.hero-subtitle h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--color-block-text);
+    font-size: 20px;
+}
+
+/* Hero Style End */

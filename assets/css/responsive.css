@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px) {
+
+    header .top-row,
+    header nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .top-row {
+        flex-direction: row;
+    }
+
+    header h1,
+    header nav {
+        width: 48%;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    header nav ul li {
+        width: 48%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header .top-row {
+        flex-direction: column;
+    }
+
+    header h1,
+    header nav,
+    header nav ul li,
+    header .contact-position a {
+        width: 100%;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    header nav ul li,
+    header .contact-position {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    }
+
+    header div.headerLine {
+        flex-flow: row nowrap;
+    }
+
+    header div.headerLine .myName {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    header div.headerLine .icon {
+        display: flex;
+        width: 30px;
+        border-radius: 0 10px 10px 0px;
+        border-left: var(--tertiary-color) 1px solid;
+    }
+
+    .sectionTitle,
+    section,
+    .content,
+    .project-container,
+    .skills div {
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .skills,
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    section .sectionBody .summaryText p,
+    .degree-container {
+        text-align: center;
+    }
+}
